@@ -1,0 +1,87 @@
+* {
+    margin:0;
+    padding: 0;
+}
+body {
+    background:linear-gradient(200deg,rgb(12, 113, 51), rgba(8, 3, 64, 0.882));
+    text-align: center;
+}
+.container {
+    height : 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    color:rgb(179, 183, 205);
+    font-size: 80px;
+    font-weight: 100;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.game {
+    height:60vmin;
+    width:60vmin;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    gap:1.5vmin;
+}
+.box1 {
+    height:18vmin;
+    width:18vmin;
+    border-radius: 6vmin;
+    border:7px solid rgb(20, 41, 2);
+    box-shadow:8 7 7rem rgba(6, 238, 21, 0.3);
+    font-size: 8vmin;
+    color:rgba(119, 45, 78, 0.868);
+    cursor: pointer;
+    background:linear-gradient(20deg,rgb(230, 223, 223), rgba(203, 243, 202, 0.882));
+    transition:transform 0.6s ease;
+    
+}
+.box1:hover{
+      box-shadow: -5px -5px 23px #00ff1a,
+    5px 5px 23px #2906ea;
+    transform:scale(1.06);
+}
+#reset-btn {
+    padding:1.2rem;
+    position: relative;
+    width:200px;
+    bottom: 80px;
+    font-size: 1.25rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background:linear-gradient(200deg,rgb(189, 69, 99), rgba(17, 11, 83, 0.882));
+    color:antiquewhite;
+    border-radius: 1rem;
+    border:none;
+    box-shadow: rgb(124, 28, 11);
+}
+#reset-btn:hover{
+      box-shadow: -5px -5px 23px #d7ced4,
+    5px 5px 23px #a9c5c7;
+}
+#new-btn {
+      padding:1rem;
+      position: relative;
+      top:50px;
+    font-size: 1.25rem;
+    background:linear-gradient(200deg,rgb(177, 65, 91), rgba(26, 9, 216, 0.882));
+    /* background:linear-gradient(200deg,rgb(177, 65, 91), rgba(17, 11, 83, 0.882)); */
+    /* background:linear-gradient(200deg,rgb(177, 65, 91), rgba(17, 11, 83, 0.882)); */
+    color:rgb(241, 244, 241);
+    font-weight:30px;
+    border-radius: 1rem;
+    border:none;
+}
+#msg {
+    color:whitesmoke;
+    font-size:5vmin;
+}
+.msg-container {
+ height:40vmin;
+}
+.hide {
+    display: none;
+}
